@@ -51,8 +51,8 @@ export default function ChatPage() {
                             key={index}
                             className={`p-2 rounded-lg ${
                                 message.sender === "user"
-                                    ? "bg-white text-black text-right w-fit ms-auto mt-12"
-                                    : "bg-purple-900 text-white text-left w-fit me-auto mt-12"
+                                    ? "bg-white text-black text-right w-fit ms-auto mb-12"
+                                    : "bg-purple-900 text-white text-left w-fit me-auto mb-12"
                             } mb-2`}
                         >
                             <TypeAnimation
@@ -79,7 +79,7 @@ export default function ChatPage() {
                 </div>
             </div>
             <div className="fixed bottom-0 left-0 w-full p-4">
-                <div className="flex items-center">
+                <div className="flex items-center mx-lg-28">
                     <input
                         name="message"
                         type="text"
